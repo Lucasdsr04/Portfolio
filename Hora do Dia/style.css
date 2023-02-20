@@ -1,7 +1,6 @@
 body    {
     background-color: lightblue;
     font: normal 15pt Arial;
-    line-height: 50px;
     
 }
 
@@ -19,6 +18,9 @@ section {
     text-align: center;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
     
+}
+div {
+    padding: 10px;
 }
 
 img#imagem{
