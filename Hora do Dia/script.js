@@ -6,7 +6,13 @@ function carregar(){
     var data = new Date()
     var hora = data.getHours()
     var min = data.getMinutes()
-    msg.innerHTML = `Agora são ${hora}:${min} `
+    
+    if (min < 10 ){
+        msg.innerHTML = `Agora são ${hora}:0${min} `
+    }else{
+        msg.innerHTML = `Agora são ${hora}:${min} `
+    }
+    
     if (hora >= 6 && hora <= 11){
         saudacao.innerHTML = 'Bom Dia !!'
         img.src = 'manha.jpg'
