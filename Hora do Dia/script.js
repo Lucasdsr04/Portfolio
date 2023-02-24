@@ -26,6 +26,8 @@ function carregar(){
         img.src = 'noite.jpg'
         document.body.style.backgroundColor = '#081B1F'
     } 
-
+    
+setInterval(carregar, 1000);
+    
 }
 
