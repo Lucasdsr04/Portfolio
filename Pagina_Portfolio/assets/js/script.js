@@ -3,10 +3,10 @@ function showMenu() {
     let menuMobile = document.querySelector('.mobile-menu')
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
-        document.querySelector('#icon').src = "img/menu_white_36dp.svg"
+        document.querySelector('#icon').src = "assets/img/menu_white_36dp.svg"
     }else {
         menuMobile.classList.add('open');
-        document.querySelector('#icon').src = "img/close_white_36dp.svg";
+        document.querySelector('#icon').src = "assets/img/close_white_36dp.svg";
     }
 }
 //Menu mobile
@@ -35,11 +35,7 @@ sr.reveal('.inicio-apresentacao', {duration : 3000, origin: 'left'})
 sr.reveal('.sobre-centralizador', {duration : 3000,  origin: 'top'})
 sr.reveal('.projetos-centralizador', {duration : 3000,  origin: 'bottom'})
 sr.reveal('.habilidades-altura', {duration : 3000, origin:'top'})
-sr.reveal('', {duration : 3000, origin:'bottom'})
-sr.reveal('', {duration : 3000, origin:'bottom'})
-sr.reveal('', {duration : 3000, origin:'bottom'})
-sr.reveal('', {duration : 3000, origin:'left'})
-sr.reveal('', {duration : 3000, origin:'right'})
+//sr.reveal('', {duration : 3000, origin:'bottom'})
 //Efeito revelar 
 
 //carousel swiper de projetos
