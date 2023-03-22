@@ -1,0 +1,49 @@
+section#habilidades{
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+}
+
+#habilidades i {
+    font-size: 5rem;
+}
+
+.habilidades-altura{
+    width: 100%;
+    padding-top: 65px;
+    
+}
+
+.habilidades-centralizador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    padding: 0% 10%;
+    gap: 2rem;
+}
+
+.habilidades-altura h1{
+    padding-bottom: 75px;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer{
+    padding-top: 75px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+@media screen and (max-width: 1618px){
+    section#habilidades{
+        height: max-content;
+    }
+    .habilidades-altura{
+        padding-bottom: 65px;
+    }
+}

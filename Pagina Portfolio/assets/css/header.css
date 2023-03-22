@@ -1,0 +1,122 @@
+/* Barra de navegação */
+
+#header {
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor-primaria);
+    opacity: 95%;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#menu a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#menu a:hover{
+    background-color: var(--cor-terciaria)
+}
+
+#btn-mobile{
+    display: none;
+}
+/* Barra de navegação */
+
+/* Barra de navegação - Mobile */
+@media screen and (max-width: 800px) {
+    
+    #header {
+        justify-content: space-between;
+    }
+
+    #logo{
+        font-size: 1.2rem;
+    }
+    
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        top: 70px;
+        right: 0px;
+        z-index: 1000;
+        transition: 0.6s;
+        visibility: hidden;
+        overflow-y: hidden ;
+        background-color: var(--cor-primaria);
+        
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid var(--cor-terciaria);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        color: #ffffff;
+    }
+    #hamburger {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+        
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        background: currentColor;
+        transition: 0.3s;
+        position: relative ;
+    }
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+/* Barra de navegação - Mobile */
