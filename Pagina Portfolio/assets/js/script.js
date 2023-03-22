@@ -41,12 +41,8 @@ sr.reveal('.avatar-img', {duration : 3000, origin: 'right'})
 sr.reveal('.inicio-apresentacao', {duration : 3000, origin: 'left'})
 sr.reveal('.sobre-centralizador', {duration : 3000,  origin: 'top'})
 sr.reveal('.projetos-centralizador', {duration : 3000,  origin: 'top'})
-sr.reveal('', {duration : 3000, origin:'top'})
-sr.reveal('', {duration : 3000, origin:'bottom'})
-sr.reveal('', {duration : 3000, origin:'bottom'})
-sr.reveal('', {duration : 3000, origin:'bottom'})
-sr.reveal('', {duration : 3000, origin:'left'})
-sr.reveal('', {duration : 3000, origin:'right'})
+sr.reveal('.habilidades-altura', {duration : 3000, origin:'top'})
+//sr.reveal('', {duration : 3000, origin:'right'})
 //Efeito revelar 
 
 //carousel swiper de projetos
