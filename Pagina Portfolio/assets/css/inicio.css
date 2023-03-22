@@ -1,0 +1,100 @@
+section#inicio{
+    width: 100vw;
+    height: 100vh;
+}
+
+.inicio-altura{
+    width: 100%;
+    padding-top: 244px;
+}
+
+.inicio-centralizador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    padding: 0px 10%;
+    gap: 2rem;
+}
+
+.inicio-apresentacao{
+    font-family: 'Poppins', sans-serif;
+}
+
+.inicio-apresentacao h1 {
+    font-size: 48px;
+    line-height: 48px;
+    padding: 10px 0px;
+}
+
+.inicio-apresentacao h2 {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 400;
+}
+
+.inicio-nome::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink .7s infinite ;
+}
+
+@keyframes blink{
+    0%, 100%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.inicio-button{
+
+    padding: 30px 90px;
+    border-radius: 40px;
+    background-color: var(--cor-primaria);
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+
+.inicio-button:hover{
+    background-color: var(--cor-secundaria);
+}
+
+@keyframes desenhoAnimacao {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 50px;
+    }
+}
+
+.avatar{
+    overflow: hidden;
+    height: 450px;
+}
+
+.avatar-img{
+    position: relative;
+    animation: desenhoAnimacao 2.0s infinite alternate-reverse linear;
+    width: 100%;
+}
+
+@media screen and (max-width: 1033px){
+    section#inicio{
+        height: max-content;
+    }
+    .inicio-altura{
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    
+}
